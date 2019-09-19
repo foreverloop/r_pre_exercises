@@ -36,7 +36,7 @@ dist_km <- dist / 1000
 plot(x=dist_km, y=a, type="l")
 
 #source itself...and run the entire code again
-source("/Users/charliejones/documents/rstuff/gravity_tutorial_1.R")
+#source("/Users/charliejones/documents/rstuff/gravity_tutorial_1.R")
 
 source("/Users/charliejones/documents/rstuff/gravity_function_ex.R")
 
@@ -70,9 +70,8 @@ calc_gravity(distance = 0,mass=uranus_mass,radius = uranus_radius)
 calc_gravity(distance = 0,mass=neptune_mass,radius = neptune_radius)
 
 #ex 1b. plot to orbit height of Phobos, a moon orbiting mars 9376
-phobos_height <- 9.376 * 10^3
-phobos_dists <- seq(from=0, to=phobos_height, by=100)
+phobos_height <- (9.376 * 10^3) * 1000 # km...km
+phobos_dists <- seq(from=0, to=phobos_height, by=1000)
 plot(x=phobos_dists, y=calc_gravity(distance=phobos_dists,
                                     mars_mass,
                                     mars_radius), type="l")
-
