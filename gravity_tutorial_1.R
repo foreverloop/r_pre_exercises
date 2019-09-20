@@ -36,6 +36,7 @@ dist_km <- dist / 1000
 plot(x=dist_km, y=a, type="l")
 
 #source itself...and run the entire code again
+#commented out here to avoid recursion
 #source("/Users/charliejones/documents/rstuff/gravity_tutorial_1.R")
 
 source("/Users/charliejones/documents/rstuff/gravity_function_ex.R")
