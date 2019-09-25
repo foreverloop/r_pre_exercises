@@ -1,0 +1,1 @@
+#naughts and crosses validation through linear algebra
