@@ -1,5 +1,5 @@
 #naughts and crosses validation through linear algebra
-
+#git push attempt halls
 mat_horizontal <- matrix(data=c(1,0,0,1,0,0,1,0,0),nrow=3,ncol=3)
 mat_horizontal
 
