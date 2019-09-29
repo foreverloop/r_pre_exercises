@@ -13,6 +13,7 @@ apply(mat_horizontal, FUN=function(x) {
   },MARGIN=c(0,1))
 
 #transpose the matrix to check for vertical wins
+#sometimes, this won't work for wins in column 2 or 3
 apply(t(mat_vertical), FUN=function(x) {
   if (length(union(c(1),x)) == 1 && (x[1][1] != 0))
     return(TRUE)
